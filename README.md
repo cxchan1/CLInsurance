@@ -1,6 +1,8 @@
 # CLInsurance
 > a simple web-application that would allow a customer to calculate the total contents limit they require and maintain a list of high-value items.
 
+<img alt="web" src="./images/image2.png">
+
 ## Technologies:
  - 1 web site in react
  - 1 api fullrest write in dotnet core
@@ -25,3 +27,5 @@ You can use the following command line for build docker image:
     docker-compose -f docker-compose-build.yml up --build -d
     docker exec -it sql "bash"
     ./docker-import.sh
+
+<img alt="sql" src="./images/image1.png">
