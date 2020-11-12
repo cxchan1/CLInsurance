@@ -5,7 +5,7 @@
  - 1 web site in react
  - 1 api fullrest write in dotnet core
  - 1 api-test unit-test project of the rest api
- - 1 MSSQL Server dockerized in docker
+ - 1 SQL Server dockerized in docker
 # Getting Started
 It contains 4 projects. Each project contains a specific command of how to get it works.
 ## Web
