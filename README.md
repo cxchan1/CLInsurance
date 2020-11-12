@@ -7,7 +7,7 @@
  - 1 api-test unit-test project of the rest api
  - 1 SQL Server dockerized in docker
 # Getting Started
-It contains 4 projects. Each project contains a specific command of how to get it works.
+It contains 4 projects. Here are a set of list of intructions of how to get each project to works.
 ## Web
 React project create with create-react-app. You must build the application by running in the its own dir:
 
