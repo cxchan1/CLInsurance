@@ -71,7 +71,7 @@ namespace api.Controllers
 
         // DELETE: api/Item/1
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteItem(int id)
+        public async Task<ActionResult> DeleteItem(int id)
         {
             var res = await _context.Items.FindAsync(id);
             if (res == null)

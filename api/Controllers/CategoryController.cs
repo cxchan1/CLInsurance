@@ -22,15 +22,15 @@ namespace api.Controllers
 
         // GET api/Category
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Category>>> GetItems()
+        public ActionResult<IEnumerable<Category>> GetCategories()
         {
-            string con = _context.Database.GetDbConnection().ConnectionString;
-            return await _context.Categories.ToListAsync();
+            var categories = _context.Categories.Where(a => a.Active == true).ToList();
+            return categories;
         }
 
         // GET api/Category/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Category>> GetItem(int id)
+        public async Task<ActionResult<Category>> GetCategory(int id)
         {
             var category = await _context.Categories.FindAsync(id);
 
