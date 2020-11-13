@@ -9,4 +9,3 @@ EXPOSE 80
 EXPOSE 1433
 
 ENTRYPOINT ["dotnet", "api.dll"]
-# CMD dotnet api.dll:
