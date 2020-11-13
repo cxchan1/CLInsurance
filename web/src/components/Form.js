@@ -2,14 +2,9 @@ import React from 'react'
 import { MdSend } from "react-icons/md"
 import Select from 'react-select'
 
+function Form({ name, amount, category, list, handleName, handleAmount, handleCategory, handleSubmit, edit }) {
 
-function Form({ name, amount, category, handleName, handleAmount, handleCategory, handleSubmit, edit }) {
-
-    const options = [
-        { value: 1, label: 'Electronics' },
-        { value: 2, label: 'Clothing' },
-        { value: 3, label: 'Kitchen' }
-      ]
+    var options = list.map(v => ({ value: v.id, label: v.name }));
 
     return (
         <form onSubmit={handleSubmit} >
